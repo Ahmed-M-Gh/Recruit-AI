@@ -27,7 +27,7 @@ class JobAIService:
                 model=settings.LLM_MODEL,
                 messages=[
                     {"role" : "system", "content" : JOB_ENHANCEMENT_SYSTEM_PROMPT},
-                    {"role" : "user", "content":user_prompt},
+                    {"role" : "user", "content" : user_prompt},
                 ],
                 response_format=EnhancePositionResponse,
                 temperature=settings.LLM_TEMPERATURE,

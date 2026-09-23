@@ -20,6 +20,9 @@ class Settings(BaseSettings):
     LLM_TEMPERATURE:float = 0.3
     LLM_MAX_TOKENS:int = 2048
     
+    # Embeddings model
+    EMBEDDING_MODEL:str = "BAAI/bge-large-en-v1.5"
+    
     # env file
     model_config = SettingsConfigDict(
         env_file=BASE_DIR/".env",
@@ -33,6 +36,5 @@ def get_settings() -> Settings:
 
 # Response messages
 class ResponseSignal(Enum):
-    
     RATE_LIMIT = "Groq API Limit Exceeded."
     API_TIME_OUT = "Groq API Timeout."
