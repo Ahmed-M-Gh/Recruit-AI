@@ -1,2 +1,3 @@
 from .job_ai_service import JobAIService
 from .cv_screening_service import CVScreeningService
+from .question_generating_service import QuestionGeneratingService

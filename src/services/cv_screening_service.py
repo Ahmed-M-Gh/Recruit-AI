@@ -3,7 +3,6 @@ from typing import List
 from src.config import get_settings
 settings = get_settings()
 from src.schemas import CVInput, CVAIAnalysis, CVResult, CVScreeningResponse
-from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 from src.prompts import CV_EVALUATOR_SYSTEM_PROMPT, CV_EVALUATOR_USER_PROMPT
